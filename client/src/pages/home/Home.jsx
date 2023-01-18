@@ -42,12 +42,19 @@ const Home = () => {
             <textarea className='chatMessageInput' placeholder='write message' ></textarea>
             <button className='chatSubmit'>Send</button>
           </div>
-          
+
         </div>
       </div>
-
       <div className="profileDesc">
-        <div className="profileDescWrapper"></div>
+        <div className="profileDescWrapper">
+          <span className="profileHeader">Profile</span>
+        <div className='activeConversation'> 
+        <img className="profileImg" 
+        src="https://i.ibb.co/xjyvLKQ/pexels-pixabay-220453.jpg" 
+        alt=""/>
+        <span className="profileName">Adam Smith</span>
+        </div>
+        </div>
       </div>
     </div>
   )

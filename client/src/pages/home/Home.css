@@ -33,7 +33,7 @@
 }
 
 .chatBoxTop{
-    height: 620px;
+    height: calc(82vh);
     overflow-y: scroll;
 }
 
@@ -65,6 +65,35 @@
 
 .profileDesc{
     flex: 4;
+    position: relative;
+    padding: 5px;
+}
+
+.profileHeader {
+    font-weight: 500;
+    font-size: x-large;
+    position: absolute;
+    margin-left: 5px;
+
+    left: 0;
+}
+
+.activeConversation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profileImg {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+.profileName{
+    font-size: large;
+    font-weight: 500;
 }
 
 .chatMenuWrapper, .chatBoxWrapper, .profileDescWrapper, .sidebarWrapper {
