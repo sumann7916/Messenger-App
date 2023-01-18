@@ -5,11 +5,19 @@
 
 .sidebar{
     flex: 1;
-    border-right: 4px solid lightgrey;
+    border-right: 2px solid lightgrey;
 }
 
 .chatMenu{
-    flex: 3.5
+    flex: 3.5;
+    border-right: 2px solid lightgrey;
+}
+.chatMenuInput{
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+
 }
 
 .chatbox{
@@ -18,4 +26,10 @@
 
 .profileDesc{
     flex: 2;
+}
+
+.chatMenuWrapper, .chatBoxWrapper, .profileDescWrapper, .sidebarWrapper {
+    padding: 10px;
+    height: 100%;
+
 }

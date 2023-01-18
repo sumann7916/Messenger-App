@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import Sidebar from '../../components/sidebar/Sidebar'
+import Conversation from '../../components/conversation/Conversation'
 
 const Home = () => {
   return (
@@ -11,11 +12,25 @@ const Home = () => {
       </div>
 
       <div className="chatMenu">
-        <div className="chatMenuWrapper"></div>
+        <div className="chatMenuWrapper">
+          <input placeholder='Search Chats' className='chatMenuInput'/>
+          <Conversation/>
+          <Conversation/>
+          <Conversation/>
+          <Conversation/>
+          <Conversation/>      
+        </div>
       </div>
 
       <div className="chatbox">
-        <div className="chatboxWrapper"></div>
+        <div className="chatboxWrapper">
+          <div className="chatBoxTop">
+
+          </div>
+          <div className="chatBoxBottom">
+            
+          </div>
+        </div>
       </div>
 
       <div className="profileDesc">

@@ -3,7 +3,7 @@ import "./Sidebar.css"
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className='sidebarWrapper'>
        <div className="logo" >
             <img className="logoImg" src="https://i.ibb.co/BGtkb33/messenger-1.png" alt="Logo" />
         </div>
