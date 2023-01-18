@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.css"
 import Sidebar from '../../components/sidebar/Sidebar'
 import Conversation from '../../components/conversation/Conversation'
+import Message from '../../components/message/Message'
 
 const Home = () => {
   return (
@@ -25,11 +26,23 @@ const Home = () => {
       <div className="chatbox">
         <div className="chatboxWrapper">
           <div className="chatBoxTop">
+            <Message/>
+            <Message/>
+            <Message own />
+            <Message  />
+            <Message own />
+            <Message />
+            <Message />
+            <Message />
+            <Message />
+            <Message />
+          </div>
 
-          </div>
           <div className="chatBoxBottom">
-            
+            <textarea className='chatMessageInput' placeholder='write message' ></textarea>
+            <button className='chatSubmit'>Send</button>
           </div>
+          
         </div>
       </div>
 

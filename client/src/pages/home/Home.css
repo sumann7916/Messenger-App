@@ -1,5 +1,5 @@
 .messenger {
-    height: 100vh;  
+    height: calc(100vh-70px);  
     display: flex;  
 }
 
@@ -21,11 +21,50 @@
 }
 
 .chatbox{
-    flex: 14;
+    flex: 12;
+    border-right: 2px solid lightgrey;
 }
 
+.chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.chatBoxTop{
+    height: 620px;
+    overflow-y: scroll;
+}
+
+.chatBoxBottom{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.chatSubmit {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+}
+
+.chatMessageInput {
+    width: 80%;
+    height: 90px;
+    padding: 10px;
+}
+
+
+
 .profileDesc{
-    flex: 2;
+    flex: 4;
 }
 
 .chatMenuWrapper, .chatBoxWrapper, .profileDescWrapper, .sidebarWrapper {
