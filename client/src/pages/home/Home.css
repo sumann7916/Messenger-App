@@ -1,0 +1,21 @@
+.messenger {
+    height: 100vh;  
+    display: flex;  
+}
+
+.sidebar{
+    flex: 1;
+    border-right: 4px solid lightgrey;
+}
+
+.chatMenu{
+    flex: 3.5
+}
+
+.chatbox{
+    flex: 14;
+}
+
+.profileDesc{
+    flex: 2;
+}

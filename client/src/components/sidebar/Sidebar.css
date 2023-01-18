@@ -1,0 +1,24 @@
+.logoImg{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    margin-bottom: 100%;
+
+
+}
+ 
+.chatButtonImg, .friendsButtonImg, .profileButtonImg{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    
+
+    
+}
+
+.profileButtonImg{
+    margin-top: 20rem;
+    border-radius: 50%;
+}
