@@ -9,6 +9,8 @@ const morgan = require("morgan");
 //Importing Routers
 const userRoute = require("./routes/user-routes");
 const authRoute = require("./routes/auth-routes");
+const conversationRoute = require("./routes/conversation-routes");
+const messageRoute = require("./routes/message-routes");
 
 
 dotenv.config(); 
@@ -27,6 +29,10 @@ app.use(morgan("common"));
 // Defining Routes 
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
+app.use("/api/conversations", conversationRoute);
+app.use("/api/messages", messageRoute);
+
+
 
 //Listening at port 8000
 app.listen(8000, ()=>{
