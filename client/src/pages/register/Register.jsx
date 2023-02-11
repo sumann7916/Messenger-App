@@ -9,8 +9,8 @@ const Register = () => {
         <input placeholder="username" className="registerInput"></input>
         <input placeholder="email" className="registerInput"></input>
         <input placeholder="Description" className="registerInput"></input>
-        <input placeholder="Password" className="registerInput"></input>
-        <input placeholder="Retype Password" className="registerInput"></input>
+        <input placeholder="Password" type="password" className="registerInput"></input>
+        <input placeholder="Retype Password" type="password" className="registerInput"></input>
         <button className="registerButton">Register</button>
         <span className="text">Already Have an Account? Login</span>
         

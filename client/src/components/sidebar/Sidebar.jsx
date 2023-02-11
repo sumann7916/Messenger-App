@@ -1,12 +1,15 @@
 import React from 'react'
 import "./Sidebar.css"
+import {Link} from "react-router-dom"
 
 const Sidebar = () => {
   return (
     <div className='sidebarWrapper'>
+      <Link to="/">
        <div className="logo" >
             <img className="logoImg" src="https://i.ibb.co/BGtkb33/messenger-1.png" alt="Logo" />
         </div>
+        </Link>
         <div className="sidebarMenu">
             <div className="chatButton" title="Chats">
                 <img class="chatButtonImg" src="https://i.ibb.co/F0RWXKq/chat-bubble.png" alt="" />

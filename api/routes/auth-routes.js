@@ -32,23 +32,41 @@ router.post("/register", async(req, res)=> {
 
 
 //LOGIN USER
-router.post("/login", async(req, res)=> {
+router.post("/login", async (req, res) => {
+
     try {
-        const user = await User.findOne({email: req.body.email});
-        !user && res.status(404).json({message:"Email or password Incorrect"});  
-
-        const validPassword = await bcrypt.compare(req.body.password, user.password); //return True or False
-        !validPassword && res.status(400).json({message: "Email or Password Incorrect"});
-
-        res.status(200).json(user);
-
-
-        
-    } catch (error) {
+        const user = await User.findOne({email: req.body.email})
+        if(!user){
+            res.status(404).json("user not found")
+        }
+        if(user){
+            const validpassword = await bcrypt.compare(req.body.password, user.password)
+            if(validpassword){
+                res.json(user)
+            }
+            if(!validpassword){
+                res.status(404).json("Invalid password")
+            }
+        }
+    }
+    catch(error) {
         res.status(500).json(error);
     }
+    // try {
+
+    //   const user = await User.findOne({ email: req.body.email });
+    //   !user && res.status(404).json("user not found");
+  
+    //   const validPassword = await bcrypt.compare(req.body.password, user.password)
+    //   !validPassword && res.status(400).json("wrong password")
+  
+    //   res.status(200).json(user)
+    // } catch (err) {
+    //   res.status(500).json(err)
+    // }
+  });
 
 
-})
+
 
 module.exports = router;

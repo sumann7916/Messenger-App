@@ -51,4 +51,8 @@
 
 }
 
+.loginButton:active {
+    background-color: #066ede;
+}
+
 
